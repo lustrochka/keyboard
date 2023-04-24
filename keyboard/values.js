@@ -95,14 +95,16 @@ const values = [
         "rus": "Backspace", 
         "rusCaps": "Backspace", 
         "eng": "Backspace",
-        "engCaps": "Backspace"
+        "engCaps": "Backspace",
+        "special": "True"
     }, 
     {
         "code": "Tab",
         "rus": "Tab", 
         "rusCaps": "Tab", 
         "eng": "Tab",
-        "engCaps": "Tab"
+        "engCaps": "Tab",
+        "special": "True"
     }, 
     {
         "code": "KeyQ",
@@ -200,14 +202,16 @@ const values = [
         "rus": "Del", 
         "rusCaps": "Del", 
         "eng": "Del",
-        "engCaps": "Del"
+        "engCaps": "Del",
+        "special": "True"
     },
     {
         "code": "CapsLock",
         "rus": "CapsLock", 
         "rusCaps": "CapsLock", 
         "eng": "CapsLock",
-        "engCaps": "CapsLock"
+        "engCaps": "CapsLock",
+        "special": "True"
     },
     {
         "code": "KeyA",
@@ -291,14 +295,16 @@ const values = [
         "rus": "Enter", 
         "rusCaps": "Enter", 
         "eng": "Enter",
-        "engCaps": "Enter"
+        "engCaps": "Enter",
+        "special": "True"
     },
     {
         "code": "Shift",
         "rus": "Shift", 
         "rusCaps": "Shift", 
         "eng": "Shift",
-        "engCaps": "Shift"
+        "engCaps": "Shift",
+        "special": "True"
     },
     {
         "code": "KeyZ",
@@ -382,42 +388,48 @@ const values = [
         "rus": "Shift", 
         "rusCaps": "Shift", 
         "eng": "Shift",
-        "engCaps": "Shift"
+        "engCaps": "Shift",
+        "special": "True"
     },
     {
         "code": "ControlLeft",
         "rus": "Ctrl", 
         "rusCaps": "Ctrl", 
         "eng": "Ctrl",
-        "engCaps": "Ctrl"
+        "engCaps": "Ctrl",
+        "special": "True"
     },
     {
         "code": "MetaLeft",
         "rus": "Win", 
         "rusCaps": "Win", 
         "eng": "Win",
-        "engCaps": "Win"
+        "engCaps": "Win",
+        "special": "True"
     },
     {
         "code": "AltLeft",
         "rus": "Alt", 
         "rusCaps": "Alt", 
         "eng": "Alt",
-        "engCaps": "Alt"
+        "engCaps": "Alt",
+        "special": "True"
     },
     {
         "code": "Space",
         "rus": "Space", 
         "rusCaps": "Space", 
         "eng": "Space",
-        "engCaps": "Space"
+        "engCaps": "Space",
+        "special": "True"
     },
     {
         "code": "AltRight",
         "rus": "Alt", 
         "rusCaps": "Alt", 
         "eng": "Alt",
-        "engCaps": "Alt"
+        "engCaps": "Alt",
+        "special": "True"
     },
     {
         "code": "ArrowLeft",
@@ -445,7 +457,8 @@ const values = [
         "rus": "Ctrl", 
         "rusCaps": "Ctrl", 
         "eng": "Ctrl",
-        "engCaps": "Ctrl"
+        "engCaps": "Ctrl",
+        "special": "True"
     },
 ]
 
