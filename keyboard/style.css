@@ -39,6 +39,21 @@ li {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  transition: 0.2s;
+  box-shadow: 2px 2px rgb(61, 8, 8);
+}
+
+.key:hover {
+  cursor: pointer;
+  background-color: #4d4d4d;
+}
+.key:hover .symbol {
+  color: white;
+}
+
+.key:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }
 
 .Backspace {

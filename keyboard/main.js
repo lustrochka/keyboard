@@ -15,7 +15,7 @@ function render() {
 
   const enter = document.createElement('textarea');
   enter.setAttribute('rows', 10);
-  enter.setAttribute('cols', 90);
+  enter.setAttribute('cols', 60);
   enter.classList.add('textarea');
   wrapper.appendChild(enter);
   enter.addEventListener('keydown', keycode)
