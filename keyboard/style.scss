@@ -1,0 +1,74 @@
+body {
+  background-color: darken(gray, 20%);
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 730px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.textarea {
+  background-color: gray;
+  font-size: 20px;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  background-color: darken(gray, 35%);
+  padding: 10px 0 0 10px;
+}
+
+.key {
+  min-width: 40px;
+  height: 40px;
+  background-color: black;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.Backspace {
+  min-width: 87px;
+}
+
+.CapsLock {
+  min-width: 80px;
+}
+
+.Enter {
+  min-width: 96px;
+}
+
+.Shift {
+  min-width: 88px;
+}
+
+.ShiftRight {
+  min-width: 88px;
+}
+
+.Space {
+  min-width: 328px;
+}
+
+.symbol {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
