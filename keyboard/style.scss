@@ -53,11 +53,6 @@ li {
   }
 }
 
-.key:active {
-  box-shadow: none;
-  transform: translate(2px, 2px);
-}
-
 .active {
   background-color: $darkned-grey;
   box-shadow: none;

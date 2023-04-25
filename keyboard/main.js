@@ -29,8 +29,12 @@ function render() {
     const key = document.createElement('li');
     key.classList.add('key');
     key.classList.add(keyValues[i]["code"]);
-    key.addEventListener('click', () => {
-      enterSingleSymbol(key)
+    key.addEventListener('mousedown', () => {
+      key.classList.add('active');
+      enterSingleSymbol(key);
+    })
+    key.addEventListener('mouseup', () => {
+      key.classList.remove('active');
     })
     keyboard.appendChild(key);
     for (let j = 1; j < 5; j++) {
@@ -63,6 +67,11 @@ function enterSingleSymbol(key) {
     textarea.value += '    '
   } else if (key.classList.contains('CapsLock')) {
     changeSymbols()
+  } else if (key.classList.contains('ShiftLeft') || key.classList.contains('ShiftRight')) {
+    changeSymbols();
+    key.addEventListener('mouseup', () => {
+      changeSymbols()
+    }, {once: true})
   }
 }
 
@@ -89,14 +98,27 @@ function toggleSymbols(symbols) {
 }
 
 let specialKeys = ['ShiftLeft', 'ShiftRight', 'ControlLeft', 'ControlRight', 'AltLeft', 'AltRight'];
+let pressedKeys = new Set();
 
 document.addEventListener('keydown', (event) => {
   let key = document.querySelector(`.${event.code}`);
   key.classList.add('active');
-  enterSingleSymbol(key)
+  pressedKeys.add(event.code);
+  if (pressedKeys.size > 1) console.log('y');
+  if (event.code.includes('Shift')) {
+    if (event.repeat == false) {
+      changeSymbols();
+    }
+  } else {
+    enterSingleSymbol(key);
+  }
   document.addEventListener('keyup', (event) => {
+    if (event.code.includes('Shift')) {
+        changeSymbols();
+    }
     let keyUp = document.querySelector(`.${event.code}`);
     keyUp.classList.remove('active');
+    pressedKeys.delete(event.code);
   })
  }
 );

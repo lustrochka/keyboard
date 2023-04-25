@@ -51,11 +51,6 @@ li {
   color: white;
 }
 
-.key:active {
-  box-shadow: none;
-  transform: translate(2px, 2px);
-}
-
 .active {
   background-color: #4d4d4d;
   box-shadow: none;
