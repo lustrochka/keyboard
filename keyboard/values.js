@@ -299,7 +299,7 @@ const values = [
         "special": "True"
     },
     {
-        "code": "Shift",
+        "code": "ShiftLeft",
         "rus": "Shift", 
         "rusCaps": "Shift", 
         "eng": "Shift",

@@ -58,6 +58,15 @@ li {
   transform: translate(2px, 2px);
 }
 
+.active {
+  background-color: $darkned-grey;
+  box-shadow: none;
+  transform: translate(2px, 2px);
+  .symbol {
+    color: white;
+  }
+}
+
 .Backspace {
   min-width: 87px;
 }
@@ -70,7 +79,7 @@ li {
   min-width: 96px;
 }
 
-.Shift {
+.ShiftLeft {
   min-width: 88px;
 }
 
@@ -84,6 +93,7 @@ li {
 
 .symbol {
   color: red;
+  transition: 0.2s;
 }
 
 .hidden {
