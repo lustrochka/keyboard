@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "Calculator";
+  src: url("/keyboard/Calculator/Calculator.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Digital";
+  src: url("/keyboard/E4-Digital-Cyrillic/e4digitalcyrillic.otf") format("opentype");
+  font-style: normal;
+  font-weight: medium;
+}
 body {
   background-color: #4d4d4d;
+  font-family: "Digital";
 }
 
 li {
@@ -86,6 +99,7 @@ li {
 
 .symbol {
   color: red;
+  font-size: 15px;
   transition: 0.2s;
 }
 

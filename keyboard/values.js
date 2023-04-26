@@ -1,461 +1,461 @@
 const values = [
     {
         "code": "Backquote",
-        "rus": "ё", 
-        "rusCaps": "Ё", 
+        "bel": "ё", 
+        "belCaps": "Ё", 
         "eng": "`",
         "engCaps": "~"
     }, 
     {
         "code": "Digit1",
-        "rus": "1", 
-        "rusCaps": "!", 
+        "bel": "1", 
+        "belCaps": "!", 
         "eng": "1",
         "engCaps": "!"
     },  
     {
         "code": "Digit2",
-        "rus": "2", 
-        "rusCaps": "\"", 
+        "bel": "2", 
+        "belCaps": "\"", 
         "eng": "2",
         "engCaps": "@"
     }, 
     {
         "code": "Digit3",
-        "rus": "3", 
-        "rusCaps": "№", 
+        "bel": "3", 
+        "belCaps": "№", 
         "eng": "3",
         "engCaps": "#"
     },  
     {
         "code": "Digit4",
-        "rus": "4", 
-        "rusCaps": ";", 
+        "bel": "4", 
+        "belCaps": ";", 
         "eng": "4",
         "engCaps": "$"
     }, 
     {
         "code": "Digit5",
-        "rus": "5", 
-        "rusCaps": "%", 
+        "bel": "5", 
+        "belCaps": "%", 
         "eng": "5",
         "engCaps": "%"
     },  
     {
         "code": "Digit6",
-        "rus": "6", 
-        "rusCaps": ":", 
+        "bel": "6", 
+        "belCaps": ":", 
         "eng": "6",
         "engCaps": "^"
     },  
     {
         "code": "Digit7",
-        "rus": "7", 
-        "rusCaps": "?", 
+        "bel": "7", 
+        "belCaps": "?", 
         "eng": "7",
         "engCaps": "&"
     }, 
     {
         "code": "Digit8",
-        "rus": "8", 
-        "rusCaps": "*", 
+        "bel": "8", 
+        "belCaps": "*", 
         "eng": "8",
         "engCaps": "*"
     },  
     {
         "code": "Digit9",
-        "rus": "9", 
-        "rusCaps": "(", 
+        "bel": "9", 
+        "belCaps": "(", 
         "eng": "9",
         "engCaps": "("
     }, 
     {
         "code": "Digit0",
-        "rus": "0", 
-        "rusCaps": ")", 
+        "bel": "0", 
+        "belCaps": ")", 
         "eng": "0",
         "engCaps": ")"
     },
     {
         "code": "Minus",
-        "rus": "-", 
-        "rusCaps": "_", 
+        "bel": "-", 
+        "belCaps": "_", 
         "eng": "-",
         "engCaps": "_"
     },   
     {
         "code": "Equal",
-        "rus": "=", 
-        "rusCaps": "+", 
+        "bel": "=", 
+        "belCaps": "+", 
         "eng": "=",
         "engCaps": "+"
     }, 
     {
         "code": "Backspace",
-        "rus": "Backspace", 
-        "rusCaps": "Backspace", 
+        "bel": "Backspace", 
+        "belCaps": "Backspace", 
         "eng": "Backspace",
         "engCaps": "Backspace",
         "special": "True"
     }, 
     {
         "code": "Tab",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "Tab", 
+        "belCaps": "Tab", 
         "eng": "Tab",
         "engCaps": "Tab",
         "special": "True"
     }, 
     {
         "code": "KeyQ",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "й", 
+        "belCaps": "Й", 
         "eng": "q",
         "engCaps": "Q"
     }, 
     {
         "code": "KeyW",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "ц", 
+        "belCaps": "Ц", 
         "eng": "w",
         "engCaps": "W"
     },
     {
         "code": "KeyE",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "у", 
+        "belCaps": "У", 
         "eng": "e",
         "engCaps": "E"
     },
     {
         "code": "KeyR",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "к", 
+        "belCaps": "К", 
         "eng": "r",
         "engCaps": "R"
     },
     {
         "code": "KeyT",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "е", 
+        "belCaps": "Е", 
         "eng": "t",
         "engCaps": "T"
     },
     {
         "code": "KeyY",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "н", 
+        "belCaps": "Н", 
         "eng": "y",
         "engCaps": "Y"
     },
     {
         "code": "KeyU",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "г", 
+        "belCaps": "Г", 
         "eng": "u",
         "engCaps": "U"
     },
     {
         "code": "KeyI",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "ш", 
+        "belCaps": "Ш", 
         "eng": "i",
         "engCaps": "I"
     },
     {
         "code": "KeyO",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "ў", 
+        "belCaps": "Ў", 
         "eng": "o",
         "engCaps": "O"
     },
     {
         "code": "KeyP",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "з", 
+        "belCaps": "З", 
         "eng": "p",
         "engCaps": "P"
     },
     {
         "code": "BracketLeft",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "х", 
+        "belCaps": "Х", 
         "eng": "[",
         "engCaps": "{"
     },
     {
         "code": "BracketRight",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "'", 
+        "belCaps": "'", 
         "eng": "]",
         "engCaps": "}"
     },
     {
         "code": "Backslash",
-        "rus": "Tab", 
-        "rusCaps": "Tab", 
+        "bel": "Tab", 
+        "belCaps": "Tab", 
         "eng": "\\",
         "engCaps": "|"
     },
     {
         "code": "Delete",
-        "rus": "Del", 
-        "rusCaps": "Del", 
+        "bel": "Del", 
+        "belCaps": "Del", 
         "eng": "Del",
         "engCaps": "Del",
         "special": "True"
     },
     {
         "code": "CapsLock",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "CapsLock", 
+        "belCaps": "CapsLock", 
         "eng": "CapsLock",
         "engCaps": "CapsLock",
         "special": "True"
     },
     {
         "code": "KeyA",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "ф", 
+        "belCaps": "Ф", 
         "eng": "a",
         "engCaps": "A"
     },
     {
         "code": "KeyS",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "ы", 
+        "belCaps": "Ы", 
         "eng": "s",
         "engCaps": "S"
     },
     {
         "code": "KeyD",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "в", 
+        "belCaps": "В", 
         "eng": "d",
         "engCaps": "D"
     },
     {
         "code": "KeyF",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "а", 
+        "belCaps": "А", 
         "eng": "f",
         "engCaps": "F"
     },
     {
         "code": "KeyG",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "п", 
+        "belCaps": "П", 
         "eng": "g",
         "engCaps": "G"
     },
     {
         "code": "KeyH",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "р", 
+        "belCaps": "Р", 
         "eng": "h",
         "engCaps": "H"
     },
     {
         "code": "KeyJ",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "о", 
+        "belCaps": "О", 
         "eng": "j",
         "engCaps": "J"
     },
     {
         "code": "KeyK",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "л", 
+        "belCaps": "Л", 
         "eng": "k",
         "engCaps": "K"
     },
     {
         "code": "KeyL",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "ж", 
+        "belCaps": "Ж", 
         "eng": "l",
         "engCaps": "L"
     },
     {
         "code": "Semicolon",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "э", 
+        "belCaps": "Э", 
         "eng": ";",
         "engCaps": ":"
     },
     {
         "code": "Quote",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "э", 
+        "belCaps": "Э", 
         "eng": "'",
         "engCaps": "\""
     },
     {
         "code": "Enter",
-        "rus": "Enter", 
-        "rusCaps": "Enter", 
+        "bel": "Enter", 
+        "belCaps": "Enter", 
         "eng": "Enter",
         "engCaps": "Enter",
         "special": "True"
     },
     {
         "code": "ShiftLeft",
-        "rus": "Shift", 
-        "rusCaps": "Shift", 
+        "bel": "Shift", 
+        "belCaps": "Shift", 
         "eng": "Shift",
         "engCaps": "Shift",
         "special": "True"
     },
     {
         "code": "KeyZ",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "я", 
+        "belCaps": "Я", 
         "eng": "z",
         "engCaps": "Z"
     },
     {
         "code": "KeyX",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "ч", 
+        "belCaps": "Ч", 
         "eng": "x",
         "engCaps": "X"
     },
     {
         "code": "KeyC",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "с", 
+        "belCaps": "С", 
         "eng": "c",
         "engCaps": "C"
     },
     {
         "code": "KeyV",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "м", 
+        "belCaps": "М", 
         "eng": "v",
         "engCaps": "V"
     },
     {
         "code": "KeyB",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "і", 
+        "belCaps": "І", 
         "eng": "b",
         "engCaps": "B"
     },
     {
         "code": "KeyN",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "т", 
+        "belCaps": "Т", 
         "eng": "n",
         "engCaps": "N"
     },
     {
         "code": "KeyM",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "ь", 
+        "belCaps": "Ь", 
         "eng": "m",
         "engCaps": "M"
     },
     {
         "code": "Comma",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "б", 
+        "belCaps": "Б", 
         "eng": ",",
         "engCaps": "<"
     },
     {
         "code": "Period",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": "ю", 
+        "belCaps": "Ю", 
         "eng": ".",
         "engCaps": ">"
     },
     {
         "code": "Slash",
-        "rus": "CapsLock", 
-        "rusCaps": "CapsLock", 
+        "bel": ".", 
+        "belCaps": ",", 
         "eng": "/",
         "engCaps": "?"
     },
     {
         "code": "ArrowUp",
-        "rus": "▲", 
-        "rusCaps": "▲", 
+        "bel": "▲", 
+        "belCaps": "▲", 
         "eng": "▲",
         "engCaps": "▲"
     },
     {
         "code": "ShiftRight",
-        "rus": "Shift", 
-        "rusCaps": "Shift", 
+        "bel": "Shift", 
+        "belCaps": "Shift", 
         "eng": "Shift",
         "engCaps": "Shift",
         "special": "True"
     },
     {
         "code": "ControlLeft",
-        "rus": "Ctrl", 
-        "rusCaps": "Ctrl", 
+        "bel": "Ctrl", 
+        "belCaps": "Ctrl", 
         "eng": "Ctrl",
         "engCaps": "Ctrl",
         "special": "True"
     },
     {
         "code": "MetaLeft",
-        "rus": "Win", 
-        "rusCaps": "Win", 
+        "bel": "Win", 
+        "belCaps": "Win", 
         "eng": "Win",
         "engCaps": "Win",
         "special": "True"
     },
     {
         "code": "AltLeft",
-        "rus": "Alt", 
-        "rusCaps": "Alt", 
+        "bel": "Alt", 
+        "belCaps": "Alt", 
         "eng": "Alt",
         "engCaps": "Alt",
         "special": "True"
     },
     {
         "code": "Space",
-        "rus": "Space", 
-        "rusCaps": "Space", 
+        "bel": "Space", 
+        "belCaps": "Space", 
         "eng": "Space",
         "engCaps": "Space",
         "special": "True"
     },
     {
         "code": "AltRight",
-        "rus": "Alt", 
-        "rusCaps": "Alt", 
+        "bel": "Alt", 
+        "belCaps": "Alt", 
         "eng": "Alt",
         "engCaps": "Alt",
         "special": "True"
     },
     {
         "code": "ArrowLeft",
-        "rus": "◄", 
-        "rusCaps": "◄", 
+        "bel": "◄", 
+        "belCaps": "◄", 
         "eng": "◄",
         "engCaps": "◄"
     },
     {
         "code": "ArrowDown",
-        "rus": "▼", 
-        "rusCaps": "▼", 
+        "bel": "▼", 
+        "belCaps": "▼", 
         "eng": "▼",
         "engCaps": "▼"
     },
     {
         "code": "ArrowRight",
-        "rus": "►", 
-        "rusCaps": "►", 
+        "bel": "►", 
+        "belCaps": "►", 
         "eng": "►",
         "engCaps": "►"
     },
     {
         "code": "ControlRight",
-        "rus": "Ctrl", 
-        "rusCaps": "Ctrl", 
+        "bel": "Ctrl", 
+        "belCaps": "Ctrl", 
         "eng": "Ctrl",
         "engCaps": "Ctrl",
         "special": "True"
