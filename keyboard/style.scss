@@ -1,15 +1,8 @@
 $darkned-grey: darken(gray, 20%); 
 
-@font-face {
-  font-family: "Digital"; 
-  src: url("/keyboard/E4-Digital-Cyrillic/e4digitalcyrillic.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: medium; 
-} 
-
 body {
   background-color: $darkned-grey;
-  font-family: "Digital";
+  font-family: "Isocpeur";
 }
 
 li {
@@ -20,6 +13,7 @@ li {
   width: 730px;
   margin: 0 auto;
   text-align: center;
+  font-size: 22px;
 }
 
 .title {
@@ -100,7 +94,7 @@ li {
 
 .symbol {
   color: red;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.2s;
 }
 

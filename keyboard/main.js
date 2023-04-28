@@ -106,10 +106,10 @@ function enterSingleSymbol(key) {
     textarea.setSelectionRange(start + 1, end + 1);
   } else if (key.classList.contains('Enter')) {
     textarea.value = textarea.value.slice(0, start) + '\n' + textarea.value.slice(end);
-    textarea.setSelectionRange(start + 1, end + 1);
+    textarea.setSelectionRange(start + 1, start + 1);
   } else if (key.classList.contains('Tab')) {
     textarea.value = textarea.value.slice(0, start) + '    ' + textarea.value.slice(end);
-    textarea.setSelectionRange(start + 4, end + 4);
+    textarea.setSelectionRange(start + 4, start + 4);
   } else if (key.classList.contains('CapsLock')) {                                      
     isCapsEntered ? key.classList.remove("active") : key.classList.add("active");
     changeSymbols()
@@ -156,15 +156,12 @@ document.addEventListener('keydown', (event) => {
       changeLanguage()
     };
   }
-  if (event.code == "Tab") event.preventDefault();
   if (event.code.includes('Shift')) {
     if (event.repeat == false) {
       changeSymbols();
     }
   } else {
-    if (event.repeat == false){
       enterSingleSymbol(key);
-    }
   }
  }
 );

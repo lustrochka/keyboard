@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Digital";
-  src: url("/keyboard/E4-Digital-Cyrillic/e4digitalcyrillic.otf") format("opentype");
-  font-style: normal;
-  font-weight: medium;
-}
 body {
   background-color: #4d4d4d;
   font-family: "Isocpeur";
@@ -17,6 +11,7 @@ li {
   width: 730px;
   margin: 0 auto;
   text-align: center;
+  font-size: 22px;
 }
 
 .title {
@@ -97,7 +92,7 @@ li {
 
 .symbol {
   color: red;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.2s;
 }
 
