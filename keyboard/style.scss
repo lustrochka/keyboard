@@ -1,11 +1,4 @@
-$darkned-grey: darken(gray, 20%);
-
-@font-face {
-  font-family: "Calculator"; 
-  src: url("/keyboard/Calculator/Calculator.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
-} 
+$darkned-grey: darken(gray, 20%); 
 
 @font-face {
   font-family: "Digital"; 
@@ -36,6 +29,10 @@ li {
 .textarea {
   background-color: gray;
   font-size: 20px;
+}
+
+.textarea:focus-visible {
+  outline: none;
 }
 
 .keyboard {

@@ -70,26 +70,50 @@ function render() {
     }
     if (keyValues[i]["special"]==="True") key.classList.add('special-key')
   }
+  let note = document.createElement("div");
+  note.innerText = "Change language: Ctrl + Alt";
+  wrapper.appendChild(note);
 }
 
 render()
 
 function enterSingleSymbol(key) {
   const textarea = document.querySelector('.textarea');
+  textarea.focus();
+  let start = textarea.selectionStart;
+  let end = textarea.selectionEnd;
   if (!key.classList.contains('special-key')) {
-    textarea.value += key.innerText
+    textarea.value = textarea.value.slice(0, start) + key.innerText + textarea.value.slice(end);
+    textarea.setSelectionRange(start + 1, end + 1);
   } else if (key.classList.contains('Backspace')) {
-    textarea.value = textarea.value.slice(0, textarea.value.length - 1)
-  } else if (key.classList.contains('Space')) {                                    //Delete
-    textarea.value += ' '
+    if (start != end) {
+      textarea.value = textarea.value.slice(0, start) + textarea.value.slice(end);
+      textarea.setSelectionRange(start, start);
+    } else {
+      textarea.value = textarea.value.slice(0, start - 1) + textarea.value.slice(start);
+      textarea.setSelectionRange(start - 1, start - 1);
+    } 
+  } else if (key.classList.contains('Delete')) {
+    if (start != end) {
+      textarea.value = textarea.value.slice(0, start) + textarea.value.slice(end);
+      textarea.setSelectionRange(start, start);
+    } else {
+      textarea.value = textarea.value.slice(0, start) + textarea.value.slice(start + 1);
+      textarea.setSelectionRange(start, start);
+    } 
+  } else if (key.classList.contains('Space')) {                                   
+    textarea.value = textarea.value.slice(0, start) + ' ' + textarea.value.slice(end);
+    textarea.setSelectionRange(start + 1, end + 1);
   } else if (key.classList.contains('Enter')) {
-    textarea.value += '\n'
+    textarea.value = textarea.value.slice(0, start) + '\n' + textarea.value.slice(end);
+    textarea.setSelectionRange(start + 1, end + 1);
   } else if (key.classList.contains('Tab')) {
-    textarea.value += '    '
-  } else if (key.classList.contains('CapsLock')) {                                       //дрожание
+    textarea.value = textarea.value.slice(0, start) + '    ' + textarea.value.slice(end);
+    textarea.setSelectionRange(start + 4, end + 4);
+  } else if (key.classList.contains('CapsLock')) {                                      
     isCapsEntered ? key.classList.remove("active") : key.classList.add("active");
     changeSymbols()
-  } else if (key.classList.contains('ShiftLeft') || key.classList.contains('ShiftRight')) {      //больше двух
+  } else if (key.classList.contains('ShiftLeft') || key.classList.contains('ShiftRight')) {      
     changeSymbols();
     key.addEventListener('mouseup', () => {
       changeSymbols()
@@ -122,6 +146,7 @@ function toggleSymbols(symbols) {
 let pressedKeys = new Set();
 
 document.addEventListener('keydown', (event) => {
+  event.preventDefault()
   let key = document.querySelector(`.${event.code}`);
   if (event.code != "CapsLock") key.classList.add('active');
   pressedKeys.add(event.code);
@@ -131,12 +156,15 @@ document.addEventListener('keydown', (event) => {
       changeLanguage()
     };
   }
+  if (event.code == "Tab") event.preventDefault();
   if (event.code.includes('Shift')) {
     if (event.repeat == false) {
       changeSymbols();
     }
   } else {
-    enterSingleSymbol(key);
+    if (event.repeat == false){
+      enterSingleSymbol(key);
+    }
   }
  }
 );
@@ -162,3 +190,4 @@ function changeLanguage() {
   toggleSymbols(symbols);
   toggleSymbols(symbols2);
 }
+
